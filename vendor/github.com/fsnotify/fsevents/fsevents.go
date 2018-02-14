@@ -35,7 +35,7 @@ import (
 )
 
 // EventIdSinceNow is a sentinel to begin watching events "since now".
-const EventIDSinceNow = uint64(C.kFSEventStreamEventIdSinceNow + (1 << 64))
+const EventIDSinceNow = uint64(C.kFSEventStreamEventIdSinceNow)
 
 // CreateFlags for creating a New stream.
 type CreateFlags uint32
