@@ -192,7 +192,7 @@ Creates links to app directories into your puma-dev directory (`~/.puma-dev` by 
 
 To build puma-dev, follow these steps:
 
-* Install golang (http://golang.org)
+* Install golang [http://golang.org](http://golang.org)
 * Run `go get github.com/puma/puma-dev/...`
 * Run `$GOPATH/bin/puma-dev` to use your new binary
 
@@ -200,10 +200,16 @@ Puma-dev uses gb (http://getgb.io) to manage dependencies, so if you're working 
 
 ### Release
 
+1. Install `gox` and `gb`
+
 ```shell
 go get github.com/mitchellh/gox
 go get github.com/constabulary/gb
+```
 
-PATH="$PATH:$GOPATH/bin" RELEASE=v0.11.1 make release
+1. Build and release
+
+```shell
+PATH="$PATH:$GOPATH/bin" RELEASE=v0.12-bymealpal make release
 ```
 
